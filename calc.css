@@ -1,0 +1,66 @@
+* {
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(47, 83, 71);
+    align-items: center;
+    padding: 25px;
+}
+
+.digits {
+    display: flex;
+    flex-direction: row;
+    background-color: aliceblue;
+    width: 300px;
+    justify-content: center;
+}
+
+.screen-display {
+    height: 30px;
+    width: 300px;
+    background-color: rgb(158, 168, 177);
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.numbers {
+    background-color: rgb(54, 50, 50);
+    color: white;
+    height: 40px;
+    width: 40px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Division,
+.Multiplication,
+.Addition,
+.Subtraction,
+.Result {
+    background-color: rgb(107, 90, 33);
+    height: 40px;
+    width: 40px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Result {
+    margin-right: ;
+}
+
+.Decimal {
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
