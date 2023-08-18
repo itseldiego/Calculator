@@ -1,9 +1,15 @@
 const screenDisplay = document.querySelector('.screen-display');
 const numbers = document.querySelectorAll('.numbers');
-const operators = document.querySelectorAll('.operator');
 const clearButton = document.querySelector('.clear-screen');
 const decimalButton = document.querySelector('.decimal');
 const equalsButton = document.querySelector('.result');
+// const additionButton = document.querySelector('.addition');
+// const subtractionButton = document.querySelector('.subtraction');
+// const divisionButton = document.querySelector('.division');
+const operators = document.querySelectorAll('.operator'); // take in all operators
+
+
+
 
 let currentInput = '0';
 
@@ -20,7 +26,7 @@ numbers.forEach(number => {
 
 operators.forEach(operator => {
     operator.addEventListener('click', () => {
-        currentInput += ' ' + operator.textContent + ' ';
+        currentInput += ' ';
         screenDisplay.textContent = currentInput;
     });
 });
@@ -45,4 +51,25 @@ equalsButton.addEventListener('click', () => {
     } catch (error) {
         screenDisplay.textContent = 'Error';
     }
+});
+
+// additionButton.addEventListener('click', () => {
+//     currentInput += ' + ';
+//     screenDisplay.textContent = currentInput;
+// });
+
+// subtractionButton.addEventListener('click', () => {
+//     currentInput -= ' - ';
+//     screenDisplay.textContent = currentInput;
+// });
+// divisionButton.addEventListener('click', () => {
+//     currentInput /= '/';
+//     screenDisplay.textContent = currentInput;
+// });  no need for individual, fixing with operators function
+
+operators.forEach(operator => {
+    operator.addEventListener('click', () => {
+        currentInput += ' ' + operator.textContent + ' ';
+        screenDisplay.textContent = currentInput;
+    });
 });
